@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es-co">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Contenedor principal -->
+    <div class="container">
+      <header class="logo">
+        <img src="Asstes/Logo.png" alt="logo">
+      </header>
+        <!-- Contenedor encriptar -->
+        <div class="encriptar">
+            <!-- Ingreso de texto -->
+            <textarea
+                name="texto" 
+                class="texto" 
+                id="texto" 
+                placeholder="Ingrese el texto aquí"
+            ></textarea>
+        </div>
+        <!-- Condiciones -->
+        <div class="terminos">
+           <img src="Asstes/Frame 1.png" alt="¡Solo letras minúsculas y sin acentos!">
+        </div>
+        <!-- Contenedor botones -->
+        <div class="botones">
+            <button class="btn-encriptar" type="button" onclick="encriptar()"> Encriptar </button>
+            <button  type="button"  class="btn-desencriptar" onclick="desencriptar()" >  Desencriptar </button>
+        </div>
+    </div>
+    <!-- Sección de imágenes y texto encriptado -->
+    <div class="encriptado">
+        <img src="Asstes/Muñeco.png" alt="" id="Muñeco">
+        <textarea 
+        name="mensaje"
+        id="mensaje" 
+        class="mensaje"
+        readonly
+    ></textarea>
+        <div class="mensaje-encriptado" id="mensaje-encriptado">
+            <h2 id="titulo-mensaje">Ningún mensaje encontrado</h2>
+            <p id="parrafo">Ingresa el texto que deseas encriptar</p>
+            <divc class="encriptador">
+            
+            </div>
+        </div>
+        <div class="boton">
+            <button type="button" id="btn-Copiar-Pegar" class="btn-Copiar-Pegar" onclick="copiarTexto()">Copiar Pegar</button>
+
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
